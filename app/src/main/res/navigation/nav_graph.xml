@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+
+    app:startDestination="@+id/BlankFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.example.macc_test.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/ProfileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ProfileFragment"
+        android:name="com.example.macc_test.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+        <argument
+            android:name="fullname"
+            app:nullable="true"
+            android:defaultValue="@null"
+            app:argType="string" />
+        <argument
+            android:name="email"
+            app:nullable="true"
+            android:defaultValue="@null"
+            app:argType="string" />
+        <argument
+            android:name="score"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="followers"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <argument
+            android:name="following"
+            android:defaultValue="-1"
+            app:argType="integer" />
+
+        <action
+            android:id="@+id/next_action"
+            app:destination="@+id/ModifyUserFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SocialFragment"
+        android:name="com.example.macc_test.SocialFragment"
+        android:label="Social"
+        tools:layout="@layout/fragment_social">
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/ProfileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/StatsFragment"
+        android:name="com.example.macc_test.StatsFragment"
+        android:label="Stats"
+        tools:layout="@layout/fragment_stats">
+    </fragment>
+
+    <fragment
+        android:id="@+id/SetUpWalkFragment"
+        android:name="com.example.macc_test.SetUpWalkFragment"
+        android:label="fragment_set_up_walk"
+        tools:layout="@layout/fragment_set_up_walk" >
+
+        <action
+            android:id="@+id/next_action"
+            app:destination="@+id/StepCounterFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/StepCounterFragment"
+        android:name="com.example.macc_test.StepCounterFragment"
+        android:label="fragment_step_counter">
+        <argument
+            android:name="amount"
+            android:defaultValue="0"
+            app:argType="integer" />
+        <action
+            android:id="@+id/next_action"
+            app:destination="@+id/HomeFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/ModifyUserFragment"
+        android:name="com.example.macc_test.ModifyUserFragment"
+        android:label="fragment_modify_user"
+        tools:layout="@layout/fragment_modify_user" >
+
+        <action
+            android:id="@+id/next_action"
+            app:destination="@+id/ProfileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/BlankFragment"
+        android:name="com.example.macc_test.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" >
+        <action
+            android:id="@+id/next_action"
+            app:destination="@+id/HomeFragment"/>
+    </fragment>
+
+</navigation>

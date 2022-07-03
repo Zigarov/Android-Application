@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/HomeFragment"
+        android:enabled="true"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/SocialFragment"
+        android:enabled="true"
+        android:title="Social"
+        android:icon="@drawable/ic_social"/>
+
+    <item
+        android:id="@+id/SetUpWalkFragment"
+        android:title="Run" />
+
+    <item
+        android:id="@+id/StatsFragment"
+        android:enabled="true"
+        android:title="Map"
+        android:icon="@drawable/ic_map"/>
+
+    <item
+        android:id="@+id/ProfileFragment"
+        android:enabled="true"
+        android:title="Profile"
+        android:icon="@drawable/ic_profile"/>
+</menu>

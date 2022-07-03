@@ -1,0 +1,45 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MACC_test" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/yellow_300</item>
+        <item name="colorPrimaryVariant">@color/yellow_100</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/yellow1_300</item>
+        <item name="colorSecondaryVariant">@color/yellow1_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Customize your theme here. -->
+        <item name="android:statusBarColor">@color/yellow_400</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">@color/yellow1_100</item>
+
+
+    </style>
+
+    <style name="LoginTheme" parent="FirebaseUI">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/yellow_300</item>
+        <item name="colorPrimaryVariant">@color/yellow_100</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/yellow1_100</item>
+        <item name="colorSecondaryVariant">@color/yellow1_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Customize your theme here. -->
+        <item name="android:colorAccent">@android:color/holo_blue_dark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/yellow1_200</item>
+        <item name="android:statusBarColor">@color/yellow_400</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name= "android:textColorPrimary">@color/black</item>
+        <item name="android:editTextColor">#295055</item>
+        <item name="android:textColorSecondary">#295055</item>
+        <item name="android:textColorTertiary">#295055</item>
+        <item name="android:textColorPrimaryInverse">#295055</item>
+        <item name="android:textColorSecondaryInverse">#295055</item>
+        <item name="android:textColorTertiaryInverse">#295055</item>
+
+    </style>
+</resources>
